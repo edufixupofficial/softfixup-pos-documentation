@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="images/softfixup.png" />
+    <title>SoftFixup React POS Solution</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700"
+      rel="stylesheet"
+      type="text/css" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="body-wrapper">
+      <!-- nav area -->
+      <div class="nav-wrapper">
+        <div class="logo-wrapper">
+          <h1 class="logo-title">SoftFixup React POS Solution</h1>
+        </div>
+        <div class="nav" id="nav">
+          <div class="nav-item active">
+            <a class="main-nav-item"
+              ><i class="fas fa-cog"></i>Getting Started</a
+            >
+            <div class="sub-nav">
+              <a class="sub-nav-item active" href="#introduction"
+                >Introduction</a
+              >
+
+              <a class="sub-nav-item" href="#backend-configuration"
+                >Backend Configuration</a
+              >
+
+              <a class="sub-nav-item" href="#store-configuration"
+                >Frontend Configuration</a
+              >
+
+              <a class="sub-nav-item" href="#install-on-local-server"
+                >Run on local server</a
+              >
+
+              <a class="sub-nav-item" href="#configure-store"
+                >Crate Rote Admin and Configure Store</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <a class="main-nav-item"
+              ><i class="fas fa-question"></i>Features and How to use?</a
+            >
+            <div class="sub-nav">
+              <a class="sub-nav-item" href="#dashboard">Dashboard</a>
+              <a class="sub-nav-item" href="#owner">Owner</a>
+              <a class="sub-nav-item" href="#sms">Promotional Message</a>
+              <a class="sub-nav-item" href="#pos">POS System</a>
+              <a class="sub-nav-item" href="#sales">Sales</a>
+              <a class="sub-nav-item" href="#return">Return List</a>
+              <a class="sub-nav-item" href="#damages">Damages</a>
+              <a class="sub-nav-item" href="#stocklist">Stock List</a>
+              <a class="sub-nav-item" href="#purchases">Add Purchases</a>
+              <a class="sub-nav-item" href="#unit">Add Unit</a>
+              <a class="sub-nav-item" href="#product">Add Product</a>
+              <a class="sub-nav-item" href="#category">Add Category</a>
+              <a class="sub-nav-item" href="#brand">Add Brand</a>
+              <a class="sub-nav-item" href="#self">Add Self</a>
+              <a class="sub-nav-item" href="#expense">Add Expense</a>
+              <a class="sub-nav-item" href="#expenseCategory">Add Expense Category</a>
+              <a class="sub-nav-item" href="#payment">Add Payment</a>
+              <a class="sub-nav-item" href="#sr">Add SR</a>
+              <a class="sub-nav-item" href="#customer ">Add Customer </a>
+              <a class="sub-nav-item" href="#supplier ">Add Supplier </a>
+              <a class="sub-nav-item" href="#profitLoss ">Profit Loss Report </a>
+              <a class="sub-nav-item" href="#todayReport ">Today Report </a>
+              <a class="sub-nav-item" href="#currentMonthReport ">Current Month Report </a>
+              <a class="sub-nav-item" href="#summaryReport ">Summary Report </a>
+              <a class="sub-nav-item" href="#dailyReport ">Daily Report </a>
+              <a class="sub-nav-item" href="#customerDueReport ">Customer Due Daily Report </a>
+              <a class="sub-nav-item" href="#supplierDueReport ">Supplier Due Daily Report </a>
+              <a class="sub-nav-item" href="#lowStockReport ">Low Stock Report </a>
+              <a class="sub-nav-item" href="#topCustomer ">Top Customer</a>
+              <a class="sub-nav-item" href="#topProduct ">Top Product</a>
+              <a class="sub-nav-item" href="#topProductAllTime ">Top Product All Time</a>
+              <a class="sub-nav-item" href="#customerLedger ">Customer Ledger</a>
+              <a class="sub-nav-item" href="#supplierLedger ">Supplier Ledger</a>
+              <a class="sub-nav-item" href="#backup ">Data Backup</a>
+              <a class="sub-nav-item" href="#settings ">Settings</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content area -->
+      <div class="content-wrapper" id="content">
+        <!-- navbar -->
+        <div class="need-support">
+          <a href="https://pos.softfixup.com/dashboard" target="_blank"
+            ><i class="fa fa-bullseye"></i>View demo</a
+          >
+          <a href="https://codecanyon.net/user/softfixup" target="_blank"
+            ><i class="fa fa-cloud-download"></i>Buy theme</a
+          >
+          <a href="mailto:fixupsoft@gmail.com"
+            ><i class="fa fa-support"></i>Need Support</a
+          >
+        </div>
+
+        <!-- Getting start -->
+        <div class="content-section" id="introduction" style="display: block">
+          <h3>Introduction</h3>
+
+          Thank you very much for choosing our application. We truly appreciate
+          and really hope that you'll enjoy our script! <br />
+
+          <p><strong>SoftFixup</strong> - SoftFixup React POS Solution</p>
+
+          <h3>Used Technologies</h3>
+          <ul>
+            <li>React.js</li>
+            <li>Redux</li>
+            <li>Bootstrap 5</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>PostgreSQl</li>
+            <li>Prisma</li>
+          </ul>
+          <h3>Core Features</h3>
+          This is a complete POS template built with React and Bootstrap 5 with
+          Rest API integration. This template is backend ready and it's built
+          with node, express, and uses PostgreSQl for the database. We did all
+          schema validation for saving data.
+          <h6>Here is some core feature of this project</h6>
+          <ul>
+            <li>Complete Full-Stack Project with backend integration.</li>
+            <li>Dynamic translation on all dynamic data.</li>
+            <li>
+              Dynamic dashboard with (Overview of day/month/all sold, purchases,
+              expense, profit, total receivable & Payable)
+            </li>
+            <li>Multi Store Management.</li>
+            <li>Send Promotional Message to customer</li>
+            <li>Easy POS</li>
+            <li>Auto Barcode Genaretor</li>
+            <li>Custom Unit Add</li>
+            <li>Brand & Category wise Product Add</li>
+            <li>Multi payment Options</li>
+            <li>Customers Management and Suppliers Management</li>
+            <li>Sales and Returns.</li>
+            <li>Purchases & Return.</li>
+            <li>SR Management</li>
+            <li>Reports</li>
+            <li>Expense Management</li>
+            <li>Data Backup</li>
+            <li>Backend use TypeScript</li>
+          </ul>
+
+          <h5>Need Support?</h5>
+          If you have any questions about the script, please sent a email to us
+          <strong> fixupsoft@gmail.com </strong>
+        </div>
+
+        <!-- backend-configuration -->
+        <div class="content-section" id="backend-configuration">
+          <h3>Installation</h3>
+          <div class="content">
+            <section class="callout-yellow">
+              <p>
+                To run react project you will need couple thing to setup first,
+                Install <strong>Node</strong>. if you already not installed.
+              </p>
+            </section>
+            <h6>NPM Packages:</h6>
+            <ul>
+              <li>After downloading the template, unzip it</li>
+              <li>Open the VS Code Terminal/System Terminal</li>
+              <li>
+                Go to the folder (backend):
+                <strong>(cd path/to/template)</strong>
+              </li>
+              <li>
+                Run: <strong>npm install</strong>, it will install all used
+                packages for this backend.
+              </li>
+              <li>Make sure that there is no error.</li>
+            </ul>
+            <p>
+              After the npm packages are installed, make sure that you have a
+              <strong> package.json</strong> file and check that you have the
+              below lines under the scripts.
+            </p>
+
+            <pre>
+        <code>
+          "scripts": {
+            "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+            "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
+            "lint:fix": "eslint . --fix",
+            "build": "tsc",
+            "prettier:check": "prettier --ignore-path .gitignore --write \"/*.+(js|ts|json)\"",
+            "prettier:fix": "prettier --write .",
+            "lint-prettier": "yarn lint:check && yarn prettier:check",
+            "postinstall": "prisma generate",
+            "type:check": "tsc --noEmit",
+            "migrate": "npx prisma migrate dev",
+            "generate": "npx prisma generate",
+            "studio": "npx prisma studio"
+          }   
+                </code>
+              </pre>
+            <ol>
+              <li>
+                Rename <code class="env">.env.example</code> to
+                <code class="env">.env</code>
+              </li>
+              <li>
+                Configure your PostgreSQl database. Watch this video on
+                <a
+                  href="https://youtu.be/bE9h6aAky4s?si=Cq89EOpfVZPpeWcI"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >PostgreSQl</a
+                >
+                . After configuring, you will find a PostgreSQl URI. Put that
+                URI in the <code class="env"> DATABASE_URL</code> variable in
+                your <code class="env">.env</code> file.
+              </li>
+              <li>
+                The <code class="env">JWT_SECRET</code> is a random value used
+                for creating a secret token. You can use any value, but make
+                sure it remains secret.
+              </li>
+
+              <li>
+                For sending <strong>Promotional SMS</strong> to
+                <strong>Customers</strong> Yo need to add SMS API
+              </li>
+            </ol>
+            <div>
+              <h6>
+                After configuration you <strong>.env</strong> file will look
+                like this
+              </h6>
+              <pre>
+                <code>
+                  NODE_ENV=development
+                  PORT=5001
+                  DATABASE_URL='postgres://postgres.password:databaseName@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres'
+                  SMS_BASE_URL="your SMS_BASE_URL"
+                  JWT_SECRET= '###AAAaaa'
+                  JWT_EXPIRES_IN="90d"
+                  SR_DEFAULT_PASSWORD="123456"
+                </code>
+                   </pre>
+
+              <h6>Running the Backend</h6>
+              <p>
+                Now run <code class="env">npm run dev</code> to start your
+                backend on the local server with PORT 5001 or the PORT you have
+                specified.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FrontEnd-configuration -->
+        <div class="content-section" id="store-configuration">
+          <h3>Installation</h3>
+          <div class="content">
+            <section class="callout-yellow">
+              <p>
+                As you already installed <strong>Node</strong> on you machine,
+                so no need to re-install again, Just check you installed
+                properly by <strong>node --version (20) </strong>
+              </p>
+            </section>
+            <h6>NPM Packages:</h6>
+            <ul>
+              <li>After downloading the template, unzip it</li>
+              <li>Open the VS Code Terminal/System Terminal</li>
+              <li>
+                Go to the folder (frontend):
+                <strong>(cd path/to/template)</strong>
+              </li>
+              <li>
+                Run: <strong>npm install</strong>, it will install all used
+                packages for this store.
+              </li>
+              <li>Make sure that there is no error.</li>
+            </ul>
+
+            <ol>
+              <li>
+                Rename <code class="env">.env.example</code> to
+                <code class="env">.env.local</code>
+              </li>
+              <li>
+                Please watch this video for Imgbb configuration
+                <a
+                  href="https://youtu.be/xYOUJHXHj1s?si=nwLJSubPEN_xPNxC"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Imgbb configuration</a
+                >,
+                <a
+                  href="https://expertphotography.com/imgbb/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >doc</a
+                >
+                (We used Imgbb for profile image upload). <br />
+                <p>Get your cloud_name,api_key and api_secret</p>
+                <img src="./images/imagebb-name.png" alt="imagebb-name" />
+                <br />
+                <p>Get your upload preset</p>
+                <img src="./images/image-bb-api.png" alt="cloudinary-preset" />
+              </li>
+            </ol>
+            <div>
+              <h6>
+                After configuration you <strong>.env.local</strong> file will
+                look like this
+              </h6>
+              <pre>
+                  <code>
+                    REACT_APP_BASE_URL=https://e1ds7jii76.execute-api.ap-south-1.amazonaws.com/dev/api/v1
+                    REACT_APP_IMAGE_BB_URL=https://api.imgbb.com/1/upload
+                    REACT_APP_IMAGE_BB_API=2c1161324f8945644a69cd9472a4d8a3
+
+                  </code>
+                     </pre>
+
+              <h6>Running the Frontend</h6>
+              <p>
+                Now run <code class="env">npm run dev</code> to start your
+                backend on the local server with
+                <a href="http://localhost:3000">Frontend</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section" id="install-on-local-server">
+          <h3>Run On Local server</h3>
+          <p>
+            To run on local server,
+            <strong>first you will need to configure</strong>
+            <strong>backend</strong> <br />
+            <br />
+            After properly configuration open the root folder on
+            <strong>VS code</strong> or any other code editor. split the
+            <strong>Terminal</strong> by clicking on [|] button and make into
+            three, then go to <strong>backend </strong> by
+            <strong>cd folder_name</strong>.
+            <br />
+            And finally run <strong>npm run dev</strong> for
+            <strong>backend</strong> and <strong>frontend</strong> <br />
+            Then frontend will run on <strong>http://localhost:3000/</strong>
+            <br />
+            and backend will <strong>http://localhost:5001</strong> and your
+            specified PORT.
+          </p>
+        </div>
+
+        <!-- installation -->
+        <div class="content-section" id="configure-store">
+          <h3>Create Admin Configuration Store</h3>
+          <p>
+            After <strong>Deploy</strong> project you need to Crate admin and
+            configure store for this you can follow swagger docs or Postman
+          </p>
+          <h4>For Swagger: {{BaseURL}}/api-docs</h4>
+          <h4>For Postman follow bellow steps:</h4>
+          <h4>Create Admin:</h4>
+          <div>
+            <span>
+              <strong>BaseURL:</strong>
+              your_deployed_backend_url
+            </span>
+            <br />
+            <span
+              ><strong>Ex:</strong>
+              https://e1ds7jii76.execute-api.ap-south-1.amazonaws.com/dev</span
+            >
+          </div>
+          <div>
+            <p>{{BaseURL}}/api/v1/auth/root</p>
+          </div>
+
+          <h5>Create Transaction Type:</h5>
+          <div>
+            <span>
+              <strong>BaseURL:</strong>
+              your_deployed_backend_url
+            </span>
+            <br />
+            <span
+              ><strong>Ex:</strong>
+              https://e1ds7jii76.execute-api.ap-south-1.amazonaws.com/dev</span
+            >
+          </div>
+          <div>
+            <p>{{BaseURL}}/api/v1/transactionType</p>
+          </div>
+          <pre>
+            <code>
+               {
+                "name": "Online"
+               }
+               
+              { 
+              "name": "Cash"
+              }
+                    </code>
+                  </pre>
+
+          <h5>Create Account Type:</h5>
+          <div>
+            <span>
+              <strong>BaseURL:</strong>
+              your_deployed_backend_url
+            </span>
+            <br />
+            <span
+              ><strong>Ex:</strong>
+              https://e1ds7jii76.execute-api.ap-south-1.amazonaws.com/dev</span
+            >
+          </div>
+          <div>
+            <p>{{BaseURL}}/api/v1/accountType</p>
+          </div>
+          <pre>
+           <code>
+            {
+              "name": "Customer"
+          }
+          {
+              "name": "Supplier"
+          }
+                            </code>
+                          </pre>
+
+          <h5>Create Payment Type:</h5>
+          <div>
+            <span>
+              <strong>BaseURL:</strong>
+              your_deployed_backend_url
+            </span>
+            <br />
+            <span
+              ><strong>Ex:</strong>
+              https://e1ds7jii76.execute-api.ap-south-1.amazonaws.com/dev</span
+            >
+          </div>
+          <div>
+            <p>{{BaseURL}}/api/v1/paymentType</p>
+          </div>
+          <pre>
+                            <code>
+                              {
+                                "name": "Cash Pay"
+                            }
+                            {
+                                "name": "Cash Received"
+                            }
+                                    </code>
+                                  </pre>
+
+          <h5>Create currency</h5>
+          <div>
+            <span>
+              <strong>BaseURL:</strong>
+              your_deployed_backend_url
+            </span>
+            <br />
+            <span
+              ><strong>Ex:</strong>
+              https://e1ds7jii76.execute-api.ap-south-1.amazonaws.com/dev</span
+            >
+          </div>
+          <div>
+            <p>{{BaseURL}}/api/v1/currency</p>
+          </div>
+          <pre>
+                                    <code>
+                                      {
+                                        "label": "BDT",
+                                        "value": "BDT"
+                                    }
+                                            </code>
+                                          </pre>
+
+          <h5>Create Store Type:</h5>
+          <div>
+            <span>
+              <strong>BaseURL:</strong>
+              your_deployed_backend_url
+            </span>
+            <br />
+            <span
+              ><strong>Ex:</strong>
+              https://e1ds7jii76.execute-api.ap-south-1.amazonaws.com/dev</span
+            >
+          </div>
+          <div>
+            <p>{{BaseURL}}/api/v1/store</p>
+          </div>
+          <pre>
+                                            <code>
+                                              {
+                                                "currencyId": 1,
+                                                "shopName": "test shop",
+                                                "address": "netrokona",
+                                                "email": "testshop@gmail.com",
+                                                "phone": "17676"
+                                            }
+                                                    </code>
+                                                  </pre>
+        </div>
+
+        <!-- system logo -->
+        <div class="content-section" id="system-logo">
+          <h3>Change Logo</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+            <li class="ml-4">https://yourdomain.com/dashboard</li>
+
+            <li>
+              <strong>Go to Appearance > Header</strong>
+            </li>
+            <li>
+              <strong>Update the field with your changes</strong>
+            </li>
+            <li><strong>Click Save Changes</strong></li>
+          </ul>
+          <br />
+          <img src="./images/header.png" alt="" />
+        </div>
+
+        <!-- homepage -->
+        <div class="content-section" id="homepage">
+          <h3>Configure Homepage</h3>
+          <p>
+            Here you can configure all the sections of homepage of the website
+          </p>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+            <li class="ml-4">https://yourdomain.com/dashboard</li>
+
+            <li>
+              <strong>Go to Appearance > Homepage</strong>
+            </li>
+            <li>
+              <strong>Update the field with your changes</strong>
+            </li>
+          </ul>
+          <br />
+          <img src="./images/home.png" alt="" />
+        </div>
+
+        <!-- admin logo -->
+        <div class="content-section" id="admin-logo">
+          <h3>Change Admin Logo</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+            <li class="ml-4">https://yourdomain.com/dashboard</li>
+
+            <li>
+              <strong>Go to System Settings > General Settings</strong>
+            </li>
+            <li>
+              <strong>Update the field with your changes</strong>
+            </li>
+            <li><strong>Click Save Changes</strong></li>
+          </ul>
+          <br />
+          <img src="./images/admin-logo.png" alt="" />
+        </div>
+
+        <!-- Sales -->
+
+        <!-- localizations -->
+        <div class="content-section" id="dashboard">
+          <h3>Dashboard</h3>
+
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+          </ul>
+          <br />
+          <img src="./images/dashbord.png" alt="" />
+        </div>
+        <div class="content-section" id="owner">
+          <h3>Add Owner For Your Store</h3>
+          <p>You can add multi Owner Account for Your Store</p>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+          </ul>
+          <br />
+          <img src="./images/owner.png" alt="owner" />
+        </div>
+        <div class="content-section" id="sms">
+          <h3>Send Promotional Message for Your Customers</h3>
+          <p>
+            You can add Promotional Message For your Store Customers
+          </p>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/promotionalsms.png" alt="" />
+        </div>
+        <div class="content-section" id="pos">
+          <h3>POS System</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+         
+          </ul>
+          <br />
+          <img src="./images/possystem.png" alt="" />
+        </div>
+
+        <div class="content-section" id="sales">
+          <h3>Sales</h3>
+          
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/Sales.png" alt="" />
+        </div>
+
+        <div class="content-section" id="return">
+          <h3>Return List</h3>
+         
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/Returnlist.png" alt="" />
+        </div>
+        <div class="content-section" id="damages">
+          <h3>Add Damages</h3>
+       
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+            
+          
+          </ul>
+          <br />
+          <img src="./images/adddamage.png" alt="" />
+        </div>
+        <div class="content-section" id="stocklist">
+          <h3>Stock List</h3>
+       
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+        
+          </ul>
+          <br />
+          <img src="./images/stocklist.png" alt="" />
+        </div>
+        <div class="content-section" id="purchases">
+          <h3>Add Purchases</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/addpurchases.png" alt="" />
+        </div>
+        <div class="content-section" id="unit">
+          <h3>Add Unit</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/unit.png" alt="" />
+        </div>
+        <div class="content-section" id="product">
+          <h3>Add Product</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/products.png" alt="" />
+        </div>
+        <div class="content-section" id="category">
+          <h3>Add Category</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/category.png" alt="" />
+        </div>
+        <div class="content-section" id="brand">
+          <h3>Add Brand</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/brands.png" alt="" />
+        </div>
+        <div class="content-section" id="self">
+          <h3>Add Self</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/self.png" alt="" />
+        </div>
+        <div class="content-section" id="expense">
+          <h3>Add Expense</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/expense.png" alt="" />
+        </div>
+        <div class="content-section" id="expenseCategory">
+          <h3>Add Expense Category</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/expensecategory.png" alt="" />
+        </div>
+        <div class="content-section" id="payment">
+          <h3>Add Payment</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/Payment.png" alt="" />
+        </div>
+        <div class="content-section" id="sr">
+          <h3>Add SR</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/sr.png" alt="" />
+        </div>
+        <div class="content-section" id="customer">
+          <h3>Add Customer</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/customer.png" alt="" />
+        </div>
+        <div class="content-section" id="supplier">
+          <h3>Add Supplier</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/suppliers.png" alt="" />
+        </div>
+        <div class="content-section" id="profitLoss">
+          <h3>Profit Loss Report</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/profitlossreport.png" alt="" />
+        </div>
+        <div class="content-section" id="todayReport">
+          <h3>Today Report</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/todayreport.png" alt="" />
+        </div>
+        <div class="content-section" id="currentMonthReport">
+          <h3>Current Month Report</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/CurrentMonthReport.png" alt="" />
+        </div>
+        <div class="content-section" id="summaryReport">
+          <h3>Summary Report</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/summaryReport.png" alt="" />
+        </div>
+        <div class="content-section" id="dailyReport">
+          <h3>Daily Report</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/DailyReport.png" alt="" />
+        </div>
+        <div class="content-section" id="customerDueReport">
+          <h3>Customer Due Report</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/customerduereport.png" alt="" />
+        </div>
+        <div class="content-section" id="supplierDueReport">
+          <h3>Supplier Due Report</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/Supplierduereport.png" alt="" />
+        </div>
+        <div class="content-section" id="lowStockReport">
+          <h3>Low Stock Report</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/lowstockreport.png" alt="" />
+        </div>
+        <div class="content-section" id="topCustomer">
+          <h3>Top Customer</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/topcustomer.png" alt="" />
+        </div>
+        <div class="content-section" id="topProduct">
+          <h3>Top Product</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/topproduct.png" alt="" />
+        </div>
+        <div class="content-section" id="topProductAllTime">
+          <h3>Top Product All Time</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/topProcutAltime.png" alt="" />
+        </div>
+        <div class="content-section" id="customerLedger">
+          <h3>Customer Ledger</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/customerledger.png" alt="" />
+        </div>
+        <div class="content-section" id="supplierLedger">
+          <h3>Supplier Ledger</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/supplierledger.png" alt="" />
+        </div>
+        <div class="content-section" id="backup">
+          <h3>Data Backup</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/databackup.png" alt="" />
+        </div>
+        <div class="content-section" id="settings">
+          <h3>Settings</h3>
+          <ul>
+            <li>
+              <strong>Login to the system as Admin</strong>
+            </li>
+
+          </ul>
+          <br />
+          <img src="./images/settings.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+  </body>
+</html>
